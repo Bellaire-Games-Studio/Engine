@@ -5,6 +5,10 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<MonoRuntimeDebuggerEnabled Condition="'$(Configuration)'=='Debug'">true</MonoRuntimeDebuggerEnabled>
   </PropertyGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Uno.Wasm.Bootstrap" Version="7.0.15" />
+		<PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="7.0.15" PrivateAssets="all" />
+	</ItemGroup>
 </Project>
